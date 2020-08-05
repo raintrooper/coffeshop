@@ -16,6 +16,17 @@ public class Empleado {
 	private String Nombre;
 	@Column(name = "Apellidos", nullable = false, length = 50, unique = false)
 	private String Apellidos;
+	@Column(name = "telefono", nullable = false, length = 10)
+	private String telefono;
+	
+	
+	
+	public String getTelefono() {
+		return telefono;
+	}
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
 	public int getIdEmpleado() {
 		return IdEmpleado;
 	}
